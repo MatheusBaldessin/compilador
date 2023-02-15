@@ -20,9 +20,9 @@ def compiler():
     for line in content:
         cleanContent = line.split(' ')
         for item in cleanContent:
-            if(hasReservedWord._contains_(item)):
+            if(hasReservedWord.__contains__(item)):
                 print('TOKEN: Palavra reservada')
-            if(hasInteger._contains_(item)):
+            if(hasInteger.__contains__(item)):
                 print('TOKEN: Número inteiro')
 
 compiler()
